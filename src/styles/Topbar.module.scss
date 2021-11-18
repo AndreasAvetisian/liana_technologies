@@ -1,0 +1,114 @@
+.header {
+    /* position: fixed;
+    top: 0;
+    margin:0px auto; */
+    width: 100%;
+    height: 140px;
+    background-color: white;  
+
+    .headerTop {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        background-color: #4c8930;
+        font-size: 16px;
+
+        .headerTopContent {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 60px;
+            width: 83.35%;
+            // background-color: rgb(37, 8, 199);
+
+            .news {
+                color: white;
+                order: -1;
+            }
+            
+            .intarnet {
+                padding: 0px 20px 0px 20px;
+                color: white;
+                order: 0;
+            }
+            
+            .input {
+                width: 177px;
+                height: 35px;
+                background-color: white;
+                border: 0;
+                border-radius: 5px;
+                order: 1;
+            }
+        }
+    }
+    
+    .headerBottom {
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: blue;
+        // margin: 25px 0px 0px 8.675%;
+
+        .headerBottomContent {
+            width: 83.35%;
+            height: 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // background-color: yellow;
+
+            .logoComProCon {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 40%;
+                height: 55px;
+                // background-color: orange;
+
+                .logo {
+                    width: 130px;
+                    height: 55px;
+                }
+                
+                .comProCon {
+                    // background-color: orange; 
+                    // padding-right: 300px;
+                    display: flex;
+                    color: grey;
+        
+                    .product {
+                        padding: 0px 20px 0px 20px;
+                    }
+                }
+            }
+
+            .searchBox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .searchInput {
+                    width: 177px;
+                    height: 35px;
+                    border: 1px solid gray;
+                    padding-left: 20px;
+                    margin-right: 9px;
+                    border-radius: 5px;
+                    color: black;
+                }
+                
+                .searchButton {
+                    width: 75px;
+                    height: 35px;
+                    border: 0;
+                    background-color: #4c8930;
+                    border-radius: 5px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
