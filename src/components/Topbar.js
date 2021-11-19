@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../lianatech_logo.svg";
+import logo from "../pictures/lianatech_logo.svg";
 import styles from '../styles/Topbar.module.scss';
 
 export default function Topbar() {
