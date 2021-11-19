@@ -44,10 +44,10 @@
     }
     
     .headerBottom {
-        height: 55px;
+        height: 80px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: end;
         // background-color: blue;
         // margin: 25px 0px 0px 8.675%;
 
@@ -106,6 +106,14 @@
                     background-color: #4c8930;
                     border-radius: 5px;
                     color: white;
+
+                    &:hover {
+                        background-color: #3d6e27;
+                    }
+
+                    &:active {
+                        background-color: #2e521e;
+                    }
                 }
             }
         }
