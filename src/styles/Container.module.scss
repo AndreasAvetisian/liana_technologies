@@ -1,3 +1,132 @@
-.aaa {
-    background-color: red;
+.containerContent {
+    background-color: white;
+
+    .backgroundPicture {
+        background-image: url(../pictures/marketing-technology-stack.jpg);
+
+        .backgroundPictureContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // background-color: red;
+            padding: 195px;
+
+            .bgPicTitle {
+                width: 550px;
+                font-size: 36px;
+                color: white;
+                padding-bottom: 20px;
+                // background-color: lime;
+            }
+
+            .bgPicButtonBox {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                // background-color: lime;
+
+                .bgPicButton {
+                    width: 111px;
+                    height: 35px;
+                    border: 0;
+                    font-size: 16px;
+                    background-color: #4c8930;
+                    border-radius: 5px;
+                    color: white;
+
+                    &:hover {
+                        background-color: #3d6e27;
+                    }
+
+                    &:active {
+                        background-color: #2e521e;
+                    }
+                }
+            }
+        }
+    }
+
+    .blog {
+        background-color: #f2f4f5;
+        // background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .blogContent {
+            background-color: #f2f4f5;
+            width: 83.0463%;
+            height: 500px;
+            // background-color: red;
+
+            .blogContentTop {
+                // background-color: blue;
+                display: flex;
+                height: 100px;
+                justify-content: space-between;
+                align-items: center;
+
+                .blogTitle {
+                    font-size: 2rem;
+                    color: grey;
+                    font-weight: 700;
+                }
+
+                .moreBlogButtonBox {
+                    width: 190px;
+                    height: 50px;
+                    // background-color: green;
+                    border-radius: 4px;
+
+                    .moreBlogButton {
+                        background-color: #f2f4f5;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        font-weight: 700;
+                        border-radius: 4px;
+                        color: #3D8618;
+                        border: 1px solid #97CB7C;
+
+                        &:hover {
+                            background-color: #3D8618;
+                            border: 1px solid #3D8618;
+                            color: white;
+                        }
+
+                        &:active {
+                            background-color: #295812;
+                            border: 1px solid #295812;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .blogContentBottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: blue;
+
+                .lianaCast {
+                    width: 380px;
+                    height: 260px;
+                    background-color: red;
+                }
+
+                .milloin_integroida {
+                    width: 380px;
+                    height: 260px;
+                    background-color: red;
+                }
+
+                .onboarding {
+                    width: 380px;
+                    height: 260px;
+                    background-color: red;
+                }
+            }
+        }
+    }
 }

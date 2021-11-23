@@ -6,6 +6,7 @@ export default function Footer() {
     var socialNetworkButton = (
         <div className={styles.buttonStyle}>1</div>
     );
+    
     return (
         <div className={styles.footer}>
             <div className={styles.footerContent}>
