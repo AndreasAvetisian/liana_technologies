@@ -1,14 +1,38 @@
 import React from "react";
 import styles from "../styles/Container.module.scss";
+import BlogComponent from "./BlogComponentsList";
 import lianacast from "../pictures/blog/lianacast.jpg";
+import milloin_integroida from "../pictures/blog/milloin_integroida_kassajarjestelma.jpg";
+import onboarding from "../pictures/blog/onboarding.jpg";
 
 export default function Container() {
 
+    const dataa = [
+        {
+            id: 0, 
+            img: <img src={lianacast} className={styles.lianaCastPicture}/>,
+            title: 'LianaCast: Dubai Expo 2020', 
+            time: '29.10.2021'
+        },
+        {
+            id: 1, 
+            img: <img src={milloin_integroida} className={styles.milloin_integroidaPicture}/>,
+            title: 'A Successful Customer Onboarding Process – What Is It?', 
+            time: '29.10.2021'
+        },
+        {
+            id: 2, 
+            img: <img src={onboarding} className={styles.onboardingPicture}/>,
+            title: 'Webinar recording: Boost your event communication', 
+            time: '29.10.2021'
+        }
+    ];
+
     var backgroundPictureContent = (
         <div className={styles.backgroundPictureContent}>
-            <div className={styles.bgPicTitle}>Software fueling digital marketing</div>
+            <div className={styles.bgPicTitle}><h1>Your complete Marketing & PR Technology Stack</h1></div>
             <div className={styles.bgPicButtonBox}>
-                <button type="button" className={styles.bgPicButton}>Learn more</button>
+                <button type="button" className={styles.bgPicButton}>Get your free demo</button>
             </div>
         </div>
     );
@@ -22,15 +46,11 @@ export default function Container() {
                 </div>
             </div>
             <div className={styles.blogContentBottom}>
-                <div className={styles.lianaCast}>
-                    <div>
-                        <img src={lianacast}/>
-                    </div>
-                    <div></div>
-                    <div></div>
+                <div className={styles.blogComponents}>
+                   <BlogComponent data={dataa}/>
+                   <BlogComponent/>
+                   <BlogComponent/>
                 </div>
-                <div className={styles.milloin_integroida}>2</div>
-                <div className={styles.onboarding}>3</div>
             </div>
         </div>
     );
