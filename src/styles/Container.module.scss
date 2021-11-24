@@ -51,7 +51,7 @@
         }
     }
 
-    .blog {
+    .blogStyle {
         background-color: #f2f4f5;
         // background-color: brown;
         display: flex;
@@ -65,7 +65,7 @@
             // background-color: red;
 
             .blogContentTop {
-                background-color: orange;
+                // background-color: orange;
                 display: flex;
                 height: 200px;
                 justify-content: space-between;
@@ -109,12 +109,7 @@
             }
 
             .blogContentBottom {
-                background-color: blue;
-
-                .blogComponents {
-                    display: flex;
-                    justify-content: space-between;
-                }
+                background-color: #f2f4f5;
             }
         }
     }

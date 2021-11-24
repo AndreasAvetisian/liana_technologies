@@ -1,0 +1,17 @@
+.blogComponentStyle {
+    display: flex;
+    justify-content: space-between;
+
+    .blogField {
+        width: 380px;
+        height: 260px;
+        border-radius: 7px;
+        box-shadow: 2px 5px 6px 1px rgb(70, 70, 70);
+        background-color: white;
+    
+        .blogPictureSize {
+            border-radius: 7px 7px 0px 0px;
+            width: 100%;
+        }
+    }
+}
