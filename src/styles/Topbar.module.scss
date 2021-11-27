@@ -81,8 +81,9 @@
                     background-color: white;
                     cursor: pointer;
 
-                    .options {
-                        width: 200px;
+                    &:focus {
+                        outline: 0;
+                        box-shadow: 0 0 0 0.2rem rgb(61 134 24 / 25%);
                     }
                 }
             }
