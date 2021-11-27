@@ -4,6 +4,34 @@
     background-color: orange;
 
     .awards {
-        background-color: blue;
+        background-color: #f2f4f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #eaedf0;
+
+        .awardsContent {
+            max-width: 1180px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 48px 0px 24px;
+            // background-color: lime;
+
+            .awardElement {
+                padding: 0px 24px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .footerMenu {
+        background-color: palegreen;
+
+        .footerMenuContent {
+            display: flex;
+            background-color: royalblue;
+        }
     }
 }
