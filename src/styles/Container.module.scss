@@ -1,0 +1,116 @@
+.containerContent {
+    background-color: white;
+
+    .backgroundPicture {
+        background-image: url(../pictures/marketing-technology-stack.jpg);
+
+        .backgroundPictureContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // background-color: red;
+            padding: 120px;
+
+            .bgPicTitle {
+                text-align: center;
+                width: 600px;
+                font-size: 24px;
+                color: white;
+                // background-color: lime;
+            }
+
+            .bgPicButtonBox {
+                width: 220px;
+                height: 52px;
+                margin-top: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                // background-color: lime;
+
+                .bgPicButton {
+                    width: 100%;
+                    height: 100%;
+                    border: 0;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    background-color: #4c8930;
+                    border-radius: 5px;
+                    color: white;
+
+                    &:hover {
+                        background-color: #3d6e27;
+                    }
+
+                    &:active {
+                        background-color: #2e521e;
+                    }
+                }
+            }
+        }
+    }
+
+    .blogStyle {
+        background-color: #f2f4f5;
+        // background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .blogContent {
+            background-color: #f2f4f5;
+            width: 80.0463%;
+            height: 500px;
+            // background-color: red;
+
+            .blogContentTop {
+                // background-color: orange;
+                display: flex;
+                height: 200px;
+                justify-content: space-between;
+                align-items: center;
+
+                .blogTitle {
+                    font-size: 2rem;
+                    color: #495057;
+                    font-weight: 700;
+                }
+
+                .moreBlogButtonBox {
+                    width: 190px;
+                    height: 50px;
+                    // background-color: green;
+                    border-radius: 4px;
+
+                    .moreBlogButton {
+                        background-color: #f2f4f5;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        font-weight: 700;
+                        border-radius: 4px;
+                        color: #3D8618;
+                        border: 1px solid #97CB7C;
+
+                        &:hover {
+                            background-color: #3D8618;
+                            border: 1px solid #3D8618;
+                            color: white;
+                        }
+
+                        &:active {
+                            background-color: #295812;
+                            border: 1px solid #295812;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .blogContentBottom {
+                background-color: #f2f4f5;
+            }
+        }
+    }
+}
