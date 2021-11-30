@@ -1,36 +1,32 @@
 import React from "react";
 import logo from "../pictures/lianatech_logo.svg";
+import searchIcon from "../pictures/topbar/search.png";
 import styles from '../styles/Topbar.module.scss';
 
 export default function Topbar() {
     return (
         <div className={styles.header}>
-            <div className={styles.headerTop}>
-                <div className={styles.headerTopContent}>
-                    <div className={styles.news}>News</div>
-                    <div className={styles.intarnet}>Intranet</div>
-                    <div>
-                        <button type="button" className={styles.input}>In English</button>
-                    </div>
+            <div className={styles.headerContent}>
+                <div className={styles.logoBox}><img src={logo} width="110px" height="35px"/></div>
+                <div className={styles.navItems}>
+                    <div className={styles.navItemsChild}>Solutions</div>
+                    <div className={styles.navItemsChild}>Industries</div>
+                    <div className={styles.navItemsChild}>Services</div>
+                    <div className={styles.navItemsChild}>Resources</div>
+                    <div className={styles.navItemsChild}>Contact Us</div>
                 </div>
-            </div>
-            <div className={styles.headerBottom}>
-                <div className={styles.headerBottomContent}>
-                    <div className={styles.logoComProCon}>
-                        <div className={styles.logo}>
-                            <img src={logo} width="130px" height="55px"/>
-                        </div>
-                        <div className={styles.comProCon}>
-                            <div>Company</div>
-                            <div className={styles.product}>Product</div>
-                            <div>Contact Us</div>
-                        </div>
+                <div className={styles.navButtons}>
+                    <div className={styles.subButtonBox}><button className={styles.subButton}>Subscribe for newsletter</button></div>
+                    <div className={styles.langSelectBox}>
+                        <select name = "dropdown" className={styles.langSelect}>
+                            <option value = "In English" selected className={styles.options}>In English</option>
+                            <option value = "En français" className={styles.options}>En français</option>
+                            <option value = "Auf Deutsch" className={styles.options}>Auf Deutsch</option>
+                            <option value = "Suomeksi" className={styles.options}>Suomeksi</option>
+                        </select>
                     </div>
-                    <div className={styles.searchBox}>
-                        <input type="text" placeholder="Search" className={styles.searchInput}/>
-                        <button type="button" className={styles.searchButton}>Search</button>
-                    </div>
-                </div>
+                    <div className={styles.searchIconBox}><img src={searchIcon} width="16px" height="16px"/></div>
+                </div> 
             </div>
         </div>
     );

@@ -1,122 +1,103 @@
 .header {
-    /* position: fixed;
-    top: 0;
-    margin:0px auto; */
+    // position: fixed;
+    // top: 0;
+    // margin:0px auto; 
     width: 100%;
-    height: 140px;
-    background-color: white;  
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: orange;  
 
-    .headerTop {
+    .headerContent {
         display: flex;
-        justify-content: center;
-        align-self: center;
-        background-color: #4c8930;
-        font-size: 16px;
+        justify-content: space-between;
+        width: 80%;
+        // background-color: lime;
 
-        .headerTopContent {
+        .logoBox {
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            height: 60px;
-            width: 83.35%;
-            // background-color: rgb(37, 8, 199);
+            justify-content: flex-start;
+            // background-color: olive;
+            width: 300px;
+            cursor: pointer;
+        }
 
-            .news {
-                color: white;
-                order: -1;
-            }
-            
-            .intarnet {
-                padding: 0px 20px 0px 20px;
-                color: white;
-                order: 0;
-            }
-            
-            .input {
-                width: 177px;
-                height: 35px;
-                background-color: white;
-                border: 0;
-                border-radius: 5px;
-                order: 1;
+        .navItems {
+            display: flex;
+            align-items: center;
+            // background-color: fuchsia;
+
+            .navItemsChild {
+                font-size: 1rem;
+                color: #212529;
+                padding: 0px 16px;
+                cursor: pointer;
             }
         }
-    }
-    
-    .headerBottom {
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        // background-color: blue;
-        // margin: 25px 0px 0px 8.675%;
 
-        .headerBottomContent {
-            width: 83.35%;
-            height: 55px;
+        .navButtons {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            // background-color: yellow;
+            // background-color: rgb(248, 54, 200);
 
-            .logoComProCon {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 40%;
-                height: 55px;
-                // background-color: orange;
+            .subButtonBox {
+                // background-color: yellow;
+                // margin-left: 32px;
 
-                .logo {
-                    width: 130px;
-                    height: 55px;
-                }
-                
-                .comProCon {
-                    // background-color: orange; 
-                    // padding-right: 300px;
-                    display: flex;
-                    color: grey;
-        
-                    .product {
-                        padding: 0px 20px 0px 20px;
+                .subButton {
+                    // width: 180px;
+                    // height: 32px;
+                    color: #3D8618;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    font-size: 14px;
+                    font-weight: 700;
+                    border-radius: 4px;
+                    border: 1px solid #97CB7C;
+                    background-color: white;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 1px solid #3D8618;
+                        background-color: #3D8618;
+                        color: white;
                     }
                 }
             }
 
-            .searchBox {
+            .langSelectBox {
+                margin-left: 1rem;
+                // background-color: lime;
+
+                .langSelect {
+                    color: #495057;
+                    text-align: center;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    border: 1px solid #ced3d9;
+                    background-color: white;
+                    cursor: pointer;
+
+                    &:focus {
+                        outline: 0;
+                        box-shadow: 0 0 0 0.2rem rgb(61 134 24 / 25%);
+                    }
+                }
+            }
+
+            .searchIconBox {
+                width: 50px;
+                height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-    
-                .searchInput {
-                    width: 177px;
-                    height: 35px;
-                    border: 1px solid gray;
-                    padding-left: 20px;
-                    margin-right: 9px;
-                    border-radius: 5px;
-                    color: black;
-                }
-                
-                .searchButton {
-                    width: 75px;
-                    height: 35px;
-                    border: 0;
-                    background-color: #4c8930;
-                    border-radius: 5px;
-                    color: white;
-
-                    &:hover {
-                        background-color: #3d6e27;
-                    }
-
-                    &:active {
-                        background-color: #2e521e;
-                    }
-                }
+                // background-color: yellow;
+                margin-left: 12px;
+                cursor: pointer;
             }
         }
     }
 }
-

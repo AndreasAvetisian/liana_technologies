@@ -1,105 +1,169 @@
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 271px;
-    background-color: #000000;
+    height: auto;
+    // background-color: orange;
 
-    .footerContent {
-        // background-color: olive;
-        width: 83.35%;
-        height: 127px;
+    .awards {
+        background-color: #f2f4f5;
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 22px;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #eaedf0;
 
-        .footerLeftSide {
+        .awardsContent {
+            max-width: 1180px;
             display: flex;
-            // background-color: red;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 48px 0px 24px;
+            // background-color: lime;
 
-            .contactInfoBox {
-                width: auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                text-align: left;
-                // background-color: blue;
-                color: white;
-
-                .title {
-                    color: white;
-                    padding-bottom: 10px;
-                    font-size: 18px;
-                }
-
-                .contactInfo {
-                    // background-color: brown;
-                    margin: -25px 0px 0px 0px;
-                }
-
-                .fontWeight {
-                    font-weight: 700;
-                }
-            }
-            
-            .contactUsButtonDiv {
-                margin-left: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: end;
-                // background-color: lime;
-
-                .contactUsButton {
-                    width: 111px;
-                    height: 35px;
-                    border: 0;
-                    background-color: #4c8930;
-                    border-radius: 5px;
-                    color: white;
-
-                    &:hover {
-                        background-color: #3d6e27;
-                    }
-
-                    &:active {
-                        background-color: #2e521e;
-                    }
-                }
+            .awardElement {
+                padding: 0px 24px;
+                margin-bottom: 24px;
             }
         }
-    
-        .footerRightSide {
-            // background-color: violet;
+    }
+
+    .footerMenu {
+        // background-color: palegreen;
+        background-color: #f2f4f5;
+        display: flex;
+        justify-content: center;
+
+        .footerMenuContent {
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
+            width: 1180px;
+            margin-top: 48px;
 
-            .CPCNI {
-                display: flex;
-                // background-color: red;
-                color: white;
+            .footerMenuContentStyle {
+                max-width: 172px;
+                padding: 0px 16px;
+            }
 
-                .components {
-                    padding: 0px 10px 0px 10px;
+            .takeContact {
+                margin-bottom: 25px;
+                font-size: 0.8125rem;
+                font-weight: 700;
+                color: #6C757D;
+                margin-top: 35px;
+            }
+            
+            .buttons {
+                // max-width: 280px;
+                padding: 0px 16px;
+
+                .subButton {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0px 0px 24px;
+
+                    .subButtonSize {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid #212529;
+                        margin: 0px 16px 0px 0px;
+
+                        .facebook {
+                            width: 50%;
+                            height: 50%;
+                        }
+
+                        .twitter {
+                            width: 70%;
+                            height: 70%;
+                        }
+
+                        .instagram {
+                            width: 40%;
+                            height: 40%;
+                        }
+
+                        .linkedin {
+                            width: 60%;
+                            height: 60%;
+                        }
+
+                        .youtube {
+                            width: 60%;
+                            height: 60%;
+                        }
+                    }
+                }
+                .lianatech {
+                    color: #6C757D;
+                    margin-bottom: 0.5rem;
+                    font-size: 0.8125rem;
+                    line-height: 1.46;
+                }
+                .copyright {
+                    display: flex;
+                    font-size: 0.8125rem !important;
+                    line-height: 1.46;
+                    
+                    .copyrightComponent {
+                        color: #3D8618;
+                        margin: 0px 16px 0px 0px;
+
+                        &:hover {
+                            color: #1B5200;
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
 
-            .socialNetworkButtons {
-                display: flex;
-                justify-content: space-between;
-                align-self: flex-end;
-                width: 124px;
-                // background-color: blue;
+            .checkItOutBottom {
+                margin-top: 55px;
+            }
 
-                .buttonStyle {
+            .titles {
+                margin-bottom: 25px;
+                font-size: 0.8125rem;
+                font-weight: 700;
+                color: #6C757D;
+            }
+
+            li {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #495057;
+                margin-bottom: 10px;
+                list-style-type: none;
+            }
+
+            .linkBox {
+                padding: 12px 0px;
+
+                .buttonLink {
                     display: flex;
-                    justify-content: center;
                     align-items: center;
-                    width: 36px;
-                    height: 36px;
-                    border-radius: 256px;
-                    background-color: #4c8930;
+                    margin: 0px 0px 16px;
+    
+                    .rightArrowStyle {
+                        margin-top: 2px;
+                        width: 8px;
+                        height: 10px;
+                    }
+    
+                    .links {
+                        color: #3D8618;
+                        padding-left: 14px;
+
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                            color: #113800;
+                        }
+                    }
                 }
             }
         }
