@@ -1,40 +1,46 @@
 import React from "react";
 import styles from '../styles/Footer.module.scss';
-import award_1 from "../pictures/footer/award_1.png";
-import award_2 from "../pictures/footer/award_2.png";
-import award_3 from "../pictures/footer/award_3.png";
-import award_4 from "../pictures/footer/award_4.png";
-import award_5 from "../pictures/footer/award_5.png";
-import award_6 from "../pictures/footer/award_6.png";
-import award_7 from "../pictures/footer/award_7.png";
-import award_8 from "../pictures/footer/award_8.png";
-import award_9 from "../pictures/footer/award_9.png";
-import award_10 from "../pictures/footer/award_10.png";
+import award_1 from "../pictures/footer/awards/award_1.png";
+import award_2 from "../pictures/footer/awards/award_2.png";
+import award_3 from "../pictures/footer/awards/award_3.png";
+import award_4 from "../pictures/footer/awards/award_4.png";
+import award_5 from "../pictures/footer/awards/award_5.png";
+import award_6 from "../pictures/footer/awards/award_6.png";
+import award_7 from "../pictures/footer/awards/award_7.png";
+import award_8 from "../pictures/footer/awards/award_8.png";
+import award_9 from "../pictures/footer/awards/award_9.png";
+import award_10 from "../pictures/footer/awards/award_10.png";
+import right_arrow from "../pictures/footer/buttons/right-arrow.png";
+import facebook from "../pictures/footer/buttons/facebook.png";
+import instagram from "../pictures/footer/buttons/instagram.png";
+import twitter from "../pictures/footer/buttons/twitter.png";
+import linkedin from "../pictures/footer/buttons/linkedin.png";
+import youtube from "../pictures/footer/buttons/youtube.png";
 
 export default function Footer() {
 
     var solutions = (
         <>
-            <div>SOLUTIONS</div>
+            <div className={styles.titles}>SOLUTIONS</div>
             <div>
                 <li>Email Marketing</li>
                 <li>Marketing automation</li>
-                <li>Information distribution and media monitoring</li>
+                <li>PR & Media</li>
                 <li>Websites</li>
-                <li>Online store</li>
+                <li>Commerce</li>
             </div>
         </>
     );
 
     var industries = (
         <>
-            <div>INDUSTRIES</div>
+            <div className={styles.titles}>INDUSTRIES</div>
             <div>
                 <li>Auto industry</li>
                 <li>Education</li>
-                <li>Tourist industry</li>
-                <li>Media and publishing industry</li>
-                <li>Public sector and organizations</li>
+                <li>Hospitality</li>
+                <li>Media & Publishing</li>
+                <li>Public Sector & NGO</li>
                 <li>Other industries</li>
             </div>
         </>
@@ -42,14 +48,14 @@ export default function Footer() {
 
     var checkItOut = (
         <>
-            <div>CHECK IT OUT</div>
+            <div className={styles.titles}>CHECK IT OUT</div>
             <div>
                 <li>Why Liana?</li>
                 <li>Information about us</li>
                 <li>History</li>
                 <li>Partners</li>
             </div>
-            <div>
+            <div className={styles.checkItOutBottom}>
                 <li>Customer stories</li>
                 <li>Blog</li>
                 <li>Proceedings</li>
@@ -59,17 +65,41 @@ export default function Footer() {
 
     var jobsAndTakeContact = (
         <>
-            <div>JOBS</div>
+            <div className={styles.titles}>JOBS</div>
             <div>
                 <li>Lianacrew</li>
                 <li>Career stories</li>
                 <li>We appreciate it</li>
                 <li>Open jobs</li>
             </div>
-            <div>TAKE CONTACT</div>
+            <div className={styles.titles, styles.takeContact}>TAKE CONTACT</div>
             <div>
-                <li>Take contact</li>
-                <li>Board of Directors and Management Team</li>
+                <li>Contact</li>
+                <li>Management</li>
+            </div>
+        </>
+    );
+
+    var buttons = (
+        <>
+            <div className={styles.linkBox}>
+                <div className={styles.buttonLink}><img src={right_arrow} className={styles.rightArrowStyle}/><a className={styles.links}>Media</a></div>
+                <div className={styles.buttonLink}><img src={right_arrow} className={styles.rightArrowStyle}/><a className={styles.links}>Subscribe to newsletter</a></div>
+                <div className={styles.buttonLink}><img src={right_arrow} className={styles.rightArrowStyle}/><a className={styles.links}>Request demo</a></div>  
+            </div>
+            <div className={styles.subButton}>
+                <div className={styles.subButtonSize}><img src={facebook} className={styles.facebook}/></div>
+                <div className={styles.subButtonSize}><img src={twitter} className={styles.twitter}/></div>
+                <div className={styles.subButtonSize}><img src={instagram} className={styles.instagram}/></div>
+                <div className={styles.subButtonSize}><img src={linkedin} className={styles.linkedin}/></div>
+                <div className={styles.subButtonSize}><img src={youtube} className={styles.youtube}/></div>
+            </div>
+            <div>
+                <div className={styles.lianatech}>© Liana Technologies</div>
+                <div className={styles.copyright}>
+                    <div className={styles.copyrightComponent}>Imprint</div>
+                    <div className={styles.copyrightComponent}>Privacy policy</div>
+                </div>
             </div>
         </>
     );
@@ -91,19 +121,21 @@ export default function Footer() {
             </div>
             <div className={styles.footerMenu}>
                 <div className={styles.footerMenuContent}>
-                    <div className={styles.solutions}>
+                    <div className={styles.solutions, styles.footerMenuContentStyle}>
                         {solutions}
                     </div>
-                    <div>
+                    <div className={styles.industries, styles.footerMenuContentStyle}>
                         {industries}
                     </div>
-                    <div>
+                    <div className={styles.checkItOut, styles.footerMenuContentStyle}>
                         {checkItOut}
                     </div>
-                    <div>
+                    <div className={styles.jobsAndTakeContact, styles.footerMenuContentStyle}>
                         {jobsAndTakeContact}
                     </div>
-                    <div></div>
+                    <div className={styles.buttons}>
+                        {buttons}
+                    </div>
                 </div>
             </div>
         </div>

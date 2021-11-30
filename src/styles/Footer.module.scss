@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
-    height: 800px;
-    background-color: orange;
+    height: auto;
+    // background-color: orange;
 
     .awards {
         background-color: #f2f4f5;
@@ -27,11 +27,145 @@
     }
 
     .footerMenu {
-        background-color: palegreen;
+        // background-color: palegreen;
+        background-color: #f2f4f5;
+        display: flex;
+        justify-content: center;
 
         .footerMenuContent {
             display: flex;
-            background-color: royalblue;
+            justify-content: space-between;
+            width: 1180px;
+            margin-top: 48px;
+
+            .footerMenuContentStyle {
+                max-width: 172px;
+                padding: 0px 16px;
+            }
+
+            .takeContact {
+                margin-bottom: 25px;
+                font-size: 0.8125rem;
+                font-weight: 700;
+                color: #6C757D;
+                margin-top: 35px;
+            }
+            
+            .buttons {
+                // max-width: 280px;
+                padding: 0px 16px;
+
+                .subButton {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0px 0px 24px;
+
+                    .subButtonSize {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid #212529;
+                        margin: 0px 16px 0px 0px;
+
+                        .facebook {
+                            width: 50%;
+                            height: 50%;
+                        }
+
+                        .twitter {
+                            width: 70%;
+                            height: 70%;
+                        }
+
+                        .instagram {
+                            width: 40%;
+                            height: 40%;
+                        }
+
+                        .linkedin {
+                            width: 60%;
+                            height: 60%;
+                        }
+
+                        .youtube {
+                            width: 60%;
+                            height: 60%;
+                        }
+                    }
+                }
+                .lianatech {
+                    color: #6C757D;
+                    margin-bottom: 0.5rem;
+                    font-size: 0.8125rem;
+                    line-height: 1.46;
+                }
+                .copyright {
+                    display: flex;
+                    font-size: 0.8125rem !important;
+                    line-height: 1.46;
+                    
+                    .copyrightComponent {
+                        color: #3D8618;
+                        margin: 0px 16px 0px 0px;
+
+                        &:hover {
+                            color: #1B5200;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .checkItOutBottom {
+                margin-top: 55px;
+            }
+
+            .titles {
+                margin-bottom: 25px;
+                font-size: 0.8125rem;
+                font-weight: 700;
+                color: #6C757D;
+            }
+
+            li {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #495057;
+                margin-bottom: 10px;
+                list-style-type: none;
+            }
+
+            .linkBox {
+                padding: 12px 0px;
+
+                .buttonLink {
+                    display: flex;
+                    align-items: center;
+                    margin: 0px 0px 16px;
+    
+                    .rightArrowStyle {
+                        margin-top: 2px;
+                        width: 8px;
+                        height: 10px;
+                    }
+    
+                    .links {
+                        color: #3D8618;
+                        padding-left: 14px;
+
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                            color: #113800;
+                        }
+                    }
+                }
+            }
         }
     }
 }
