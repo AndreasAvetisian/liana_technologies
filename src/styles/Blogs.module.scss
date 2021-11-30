@@ -1,0 +1,43 @@
+.blogComponentStyle {
+    display: flex;
+    justify-content: space-between;
+    // background-color: grey;
+
+    .blogField {
+        width: 380px;
+        height: 260px;
+        border-radius: 7px;
+        box-shadow: 0px 0px 3px 1px rgb(221, 221, 221);
+        background-color: white;
+        margin-top: 10px;
+        transition: margin-top 0.2s ease-in;
+    
+        .blogPictureSize {
+            border-radius: 7px 7px 0px 0px;
+            width: 100%;
+        }
+
+        &:hover {
+            margin-top: 0px;
+            box-shadow: 0px 3px 7px 1px rgb(216, 216, 216);
+            transition: margin-top 0.2s ease-in;
+        }
+
+        .blogText {
+            // background-color: green;
+            padding: 0px 25px 0px 25px;
+            color: #495057;
+            font-size: 1.25rem;
+        }
+
+        .blogDate {
+            display: flex;
+            align-items: center;
+            // background-color: blue;
+            padding: 0px 25px 0px 25px;
+            color: #6C757D;
+            font-size: 0.8125rem;
+            margin-top: 20px;
+        }
+    }
+}

@@ -103,6 +103,7 @@ export default function Footer() {
             </div>
         </>
     );
+    
     return (
         <div className={styles.footer}>
             <div className={styles.awards}>
