@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../pictures/lianatech_logo.svg";
+import logo from "../pictures/logo/lianatech_logo.svg";
 import searchIcon from "../pictures/topbar/search.png";
 import styles from '../styles/Topbar.module.scss';
 

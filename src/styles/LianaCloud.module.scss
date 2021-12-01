@@ -1,0 +1,142 @@
+.lianaCloudContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../pictures/bgPicture/bg-gradient-arc.png);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-top: 4.5rem;
+
+    .lianaCloudLogo {
+        background-image: url(../pictures/logo/lianacloud_logo.svg);
+        width: 158px;
+        height: 32px;
+        margin: 0px 0px 54px;
+    }
+
+    .lianaCloudComponents {
+        display: flex;
+        justify-content: space-between;
+        // align-items: end;
+        width: 80.0463%;
+        height: 202px;
+        // background-color: greenyellow;
+
+        .lianaCloud_Component {
+            cursor: pointer;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 196px;
+            height: 136px;
+            padding: 24px 16px 32px;
+            margin: 10px 24px 0px 0px;
+            border-radius: 6px;
+            box-shadow: 0 1px 6px 0 rgb(0 0 0 / 12%);
+            transition: margin-top 0.2s ease-in;
+
+            &:hover {
+                margin: 0px 24px 0px 0px;
+                box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+                transition: margin-top 0.2s ease-in;
+            }
+
+            .componentTitle {
+                line-height: 1.5;
+                font-weight: 700;
+                margin-top: 0.75rem;
+                margin: 12px 0px 8px;
+                color: #495057;
+            }
+
+            .componentText {
+                font-size: 0.8125rem;
+                color: #495057;
+                line-height: 1.46;
+            }
+
+            .solution_email_marketing {
+                width: 42px;
+                height: 42px;
+                margin: 0px 0px 12px;
+                background-image: url(../pictures/lianaCloud/solution_email-marketing.svg);
+            }
+
+            .solution_marketing_automation {
+                width: 42px;
+                height: 42px;
+                margin: 0px 0px 12px;
+                background-image: url(../pictures/lianaCloud/solution_marketing-automation.svg);
+            }
+
+            .solution_pr_media {
+                width: 42px;
+                height: 42px;
+                margin: 0px 0px 12px;
+                background-image: url(../pictures/lianaCloud/solution_pr-media.svg);
+            }
+
+            .solution_website_mobile {
+                width: 42px;
+                height: 42px;
+                margin: 0px 0px 12px;
+                background-image: url(../pictures/lianaCloud/solution_website-mobile.svg);
+            }
+
+            .solution_commerce {
+                width: 42px;
+                height: 42px;
+                margin: 0px 0px 12px;
+                background-image: url(../pictures/lianaCloud/solution_commerce.svg);
+            }
+        }
+
+        .lianaCloud_ComponentX {
+            cursor: pointer;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 196px;
+            height: 136px;
+            padding: 24px 16px 32px;
+            margin: 10px 0px 0px 0px;
+            border-radius: 6px;
+            box-shadow: 0 1px 6px 0 rgb(0 0 0 / 12%);
+            transition: margin-top 0.2s ease-in;
+
+            &:hover {
+                margin: 0px 0px 0px 0px;
+                transition: margin-top 0.2s ease-in;
+            }
+
+            .componentTitle {
+                line-height: 1.5;
+                font-weight: 700;
+                margin-top: 0.75rem;
+                margin: 12px 0px 8px;
+                color: #495057;
+            }
+
+            .componentText {
+                font-size: 0.8125rem;
+                color: #495057;
+                line-height: 1.46;
+            }
+
+            .solution_commerce {
+                width: 42px;
+                height: 42px;
+                margin: 0px 0px 12px;
+                background-image: url(../pictures/lianaCloud/solution_commerce.svg);
+            }
+        }
+    }
+}
