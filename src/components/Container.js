@@ -27,6 +27,20 @@ export default function Container() {
         </div>
     );
 
+    var pressReleases = (
+        <div className={styles.pressReleasesContent}>
+            <div className={styles.pressReleasesTop}>
+                <div className={styles.pressReleasesTitle}>Press releases</div>
+                <div className={styles.pressReleasesButtonBox}>
+                    <button type="button" className={styles.pressReleasesButton}>More press releases</button>
+                </div>
+            </div>
+            <div className={styles.pressReleasesBottom}>
+                {/* aaaa  */}
+            </div>
+        </div>
+    );
+
     var lianaCloud = (
         <div className={styles.lianaCloudContent}>
             <div className={styles.lianaCloudTitle}>
@@ -50,8 +64,8 @@ export default function Container() {
             <div className={styles.blogStyle}>
                 {blogBox}
             </div>
-            <div className={styles.latestNews}>
-
+            <div className={styles.pressReleases}>
+                {pressReleases}
             </div>
             <div className={styles.references}>
 

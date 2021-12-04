@@ -147,4 +147,61 @@
             }
         }
     }
+
+    .pressReleases {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .pressReleasesContent {
+            // background-color: #f2f4f5;
+            width: 80.0463%;
+            height: 500px;
+            // background-color: red;
+
+            .pressReleasesTop {
+                display: flex;
+                height: 200px;
+                justify-content: space-between;
+                align-items: center;
+
+                .pressReleasesTitle {
+                    font-size: 2rem;
+                    color: #495057;
+                    font-weight: 700;
+                }
+
+                .pressReleasesButtonBox {
+                    width: 205.6px;
+                    height: 43.6px;
+                    // background-color: green;
+                    border-radius: 4px;
+
+                    .pressReleasesButton {
+                        background-color: white;
+                        font-size: 16px;
+                        font-weight: 700;
+                        border-radius: 4px;
+                        width: 100%;
+                        height: 100%;
+                        padding: 8px 16px;
+                        color: #3D8618;
+                        border: 1px solid #97CB7C;
+
+                        &:hover {
+                            background-color: #3D8618;
+                            border: 1px solid #3D8618;
+                            color: white;
+                        }
+
+                        &:active {
+                            background-color: #295812;
+                            border: 1px solid #295812;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
